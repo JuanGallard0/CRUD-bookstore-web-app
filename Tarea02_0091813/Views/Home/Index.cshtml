@@ -1,0 +1,31 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron text-right" style="background-image: url(../../Images/background.jpg); 
+    background-size: cover; background-position: center; background-repeat: no-repeat; margin-top: 20px">
+    <h1 style="color: white; font-weight: 900">BIENVENIDO</h1>
+    <p class="lead" style="color: white; font-weight: 700">Sistema de mantenimiento de acceso premier</p>
+</div>
+
+<div class="row">
+    <div class="col-md-3 col-sm-6">
+        <h2>@Html.ActionLink("PERSONAS", "Index", "personas")</h2>
+        <p>Mantenimiento para personas.</p>
+    </div>
+
+    <div class="col-md-3 col-sm-6">
+        <h2>@Html.ActionLink("ROLES", "Index", "rols")</h2>
+        <p>Mantenimiento para roles.</p>
+    </div>
+
+    <div class="col-md-3 col-sm-6">
+        <h2>@Html.ActionLink("PELICULAS", "Index", "peliculas")</h2>
+        <p>Mantenimiento para películas.</p>
+    </div>
+    
+    <div class="col-md-3 col-sm-6">
+        <h2>@Html.ActionLink("ACCESO PREMIER", "Index", "acceso_premier")</h2>
+        <p>Mantenimiento para acceso premier de películas.</p>
+    </div>
+</div>
